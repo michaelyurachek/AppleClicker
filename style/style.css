@@ -1,0 +1,143 @@
+/* Settings */
+html {
+    scroll-behavior: smooth;
+}
+  
+* {
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    overflow-x: hidden;
+    font-family: "pixel", monospace;
+}
+  
+body {
+    background-image: url("/AppleClicker/asset/images/backgrounds/welcomeScreen.gif"); /* Change to /AppleClicker */
+    background-size: cover;
+    box-shadow: 0 0 50px black inset;
+}
+
+/* Custom fonts */
+@font-face {
+    font-family: 'pixel'; 
+    src: url('/AppleClicker/asset/fonts/Daydream.ttf'); /* Change to /AppleClicker */
+}
+
+/* Scrolling Behavior */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s ease;
+}
+  
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* Menu Content */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.container h1 {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-size: 3em;
+    padding: 10px;
+}
+
+.container h3 {
+    color: rgb(166, 244, 185);
+    -webkit-text-stroke: 1px black;
+    font-size: 2em;
+    padding: 30px;
+}
+
+#buttonHolder {
+    padding: 20px;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.loadingButtons {
+    padding: 10px;
+    color: white;
+    width: 20vw;
+    background-color: rgba(0, 0, 0, 0.622);
+    border-radius: 10px;
+    font-size: 1em;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.loadingButtons:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: rgb(48, 222, 48);
+    text-shadow: .15em .15em 0 rgb(0, 0, 0);
+    -webkit-text-stroke: 2px white;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+/* Style for the control buttons and slider */
+.audio-text {
+    position: fixed;
+    bottom: 70px; /* Adjust position as needed */
+    left: 10px;
+    font-size: 18px;
+    color: white; /* Adjust text color as needed */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Optional text shadow */
+    text-align: center;
+    width: 20vw;
+    -webkit-text-stroke: 2px black;
+}
+.audio-controls {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.audio-controls button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+.audio-controls button:hover {
+    color: grey;
+    cursor: pointer;
+    -webkit-text-stroke: 1px white;
+}
+.audio-controls input[type="range"] {
+    width: 150px;
+    margin-left: 10px;
+}
+
+/* Styles for the copyright text */
+.copyright {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #f1f1f1;
+    -webkit-text-stroke: 1px black;
+    width: 15vw;
+}

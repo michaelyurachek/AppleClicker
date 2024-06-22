@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/AppleClicker/style/game.css" type="text/css"> <!-- CHANGE TO /AppleClicker -->
+        <script defer src="/AppleClicker/script/game.js"></script> <!-- CHANGE TO /AppleClicker -->
+        <link rel="icon" type="image/png" href="/AppleClicker/asset/images/icons/AppleClickerLogo.png"> <!-- CHANGE TO /AppleClicker -->
+        <title>- Apple Clicker</title>
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content="Apple Clicker 🍎">
+        <meta property="og:description" content="Welcome to Apple Clicker! Harvest juicy apples with every click and upgrade your orchard to grow faster. Unlock exciting power-ups, discover hidden treasures, and watch your apple empire flourish. Dive into the addictive fun and see how many apples you can collect. Ready to start clicking? Let's grow!">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://michaelyurachek.github.io/AppleClicker/index.html">
+        <meta property="og:image" content="https://michaelyurachek.github.io/AppleClicker/asset/images/icons/AppleClickerLogo.png">
+        <meta property="og:site_name" content="Apple Clicker 🍎">
+        <!-- Twitter Card meta tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Apple Clicker 🍎">
+        <meta name="twitter:description" content="Welcome to Apple Clicker! Harvest juicy apples with every click and upgrade your orchard to grow faster. Unlock exciting power-ups, discover hidden treasures, and watch your apple empire flourish. Dive into the addictive fun and see how many apples you can collect. Ready to start clicking? Let's grow!">
+        <meta name="twitter:image" content="https://michaelyurachek.github.io/AppleClicker/asset/images/icons/AppleClickerLogo.png"> 
+        <meta name="twitter:site" content="@skyzerbefr">
+    </head>
+    <body>
+        <nav id="navigationBar">
+
+        </nav>
+        <div class="container">
+            <section class="game-container" id="clicker-container">
+                <div class="clickingHolder">
+                    <div id="dataHold">
+                        <input id="factoryName" readonly type="text" value="Weird Apple Factory!"  onmouseover="playHoverSound()" onclick="playClickSound()">
+                        <div id="factoryData">
+                            <input type="text" value="0 Apples" id="appleTotal" readonly> 
+                            <input type="text" value="Per second: 0.0" id="applePerSecond" readonly>
+                        </div>
+                    </div>
+                    <div id="clickerHolder">
+                        <img id="appleButton" src="/AppleClicker/asset/images/icons/appleButton.png" draggable="false" onmouseover="playHoverSound()"> <!-- CHANGE TO /AppleClicker -->
+                    </div>
+                </div>
+                <div class="clickingHolder" id="perksHolder">
+
+                </div>
+            </section>
+            <section class="game-container" id="mult-container">
+
+            </section>
+            <section class="game-container" id="upgrade-container">
+
+            </section>
+        </div>
+    </body>
+</html>
